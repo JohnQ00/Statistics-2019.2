@@ -12,3 +12,6 @@ imc<-hist(file$IMC, main="Frequência de IMC", xlab = "IMC", ylab = "Quantidade 
 print(altura)
 print(peso)
 print(imc)
+
+ # Display the histogram graph
+plot(table(cut(file$IMC,breaks=brk,right=FALSE,labels=classes)),ylab="Frequency")
