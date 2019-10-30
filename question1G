@@ -1,0 +1,6 @@
+# Display the table
+file <- read.csv("tablej.csv",TRUE,sep = ",")
+print(file)
+
+# Display standard deviation
+sd(file$IMC)
