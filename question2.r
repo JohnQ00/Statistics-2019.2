@@ -27,7 +27,8 @@ print(Frequencia_absoluta)
 Frequencia_relativa<- prop.table(Escolaridade)
 print(Frequencia_relativa)
 
-final_table_e<-cbind(Escolaridade,Frequencia_absoluta,Frequencia_relativa)
+names<-c("Ensino Médio Incompleto","Ensino Médio Completo", "Ensino Superior Incompleto", "Graduação", "Doutorado")
+final_table_e<-cbind(names,Escolaridade,Frequencia_absoluta,Frequencia_relativa)
 print(final_table_e)
 
 brk_e<- seq(1,16,3)
