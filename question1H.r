@@ -1,6 +1,7 @@
 # Display Histograms
 
 file <- read.csv("table.csv",TRUE,sep = ",")
+file$IMC<- (file$Peso/(file$Altura)^2)
 
  # Display height histogram
 altura<- hist(file$Altura, main="Frequência de altura", xlab = "Altura", ylab = "Quantidade de Pessoas")
