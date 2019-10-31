@@ -15,4 +15,4 @@ print(peso)
 print(imc)
 
  # Display the histogram graph
-plot(table(cut(file$IMC,breaks=brk,right=FALSE,labels=classes)),ylab="Frequency")
+plot(table(cut(file$IMC,breaks=brk,right=FALSE,labels=classes)),ylab="Qtde. de pessoas")
